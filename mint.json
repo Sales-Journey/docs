@@ -15,12 +15,6 @@
       "to": "#57469d"
     }
   },
-  "topbarLinks": [
-    {
-      "name": "Support",
-      "url": "https://help.salesjourney.io/"
-    }
-  ],
   
   "tabs": [
     {
@@ -45,6 +39,7 @@
     }
   ],
   "footerSocials": {
-    "linkedin": "https://www.linkedin.com/company/salesjourney"
+    "linkedin": "https://www.linkedin.com/company/salesjourney",
+    "support": "https://help.salesjourney.io/"
   }
 }
