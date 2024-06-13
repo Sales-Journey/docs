@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Sales Journey Developr Portal",
+  "name": "Sales Journey Docs",
   "logo": {
     "dark": "/logo/logo.svg",
     "light": "/logo/logo.svg"
@@ -15,6 +15,12 @@
       "to": "#57469d"
     }
   },
+  "topbarLinks": [
+    {
+      "name": "Support",
+      "url": "https://help.salesjourney.io"
+    }
+  ],
   "tabs": [
     {
       "name": "API Reference",
@@ -38,7 +44,6 @@
     }
   ],
   "footerSocials": {
-    "linkedin": "https://www.linkedin.com/company/salesjourney",
-    "support": "https://help.salesjourney.io/"
+    "linkedin": "https://www.linkedin.com/company/salesjourney"
   }
 }
