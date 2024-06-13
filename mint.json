@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Sales Journey Docs",
+  "name": "Sales Journey Developr Portal",
   "logo": {
     "dark": "/logo/logo.svg",
     "light": "/logo/logo.svg"
   },
-  "favicon": "/logo/favicon.svg",
+  "favicon": "/logo/32x32.png",
   "colors": {
     "primary": "#57469d",
     "light": "#57469d",
@@ -15,7 +15,6 @@
       "to": "#57469d"
     }
   },
-  
   "tabs": [
     {
       "name": "API Reference",
