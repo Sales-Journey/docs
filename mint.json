@@ -28,6 +28,11 @@
     }
   ],
   "anchors": [
+    {
+      "icon": "globe",
+      "name": "Sales Journey website",
+      "url": "https://salesjourney.io"
+    }
   ],
   "navigation": [
     {
