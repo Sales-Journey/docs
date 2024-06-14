@@ -33,7 +33,8 @@
     {
       "group": "Get Started",
       "pages": [
-        "quickstart"
+        "quickstart",
+        "api-access"
       ]
     },
     {
