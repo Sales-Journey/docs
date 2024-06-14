@@ -21,17 +21,17 @@
       "url": "https://help.salesjourney.io"
     }
   ],
+  "anchors": [
+    {
+      "icon": "globe",
+      "name": "Sales Journey",
+      "url": "https://salesjourney.io"
+    }
+  ],
   "tabs": [
     {
       "name": "API Reference",
       "url": "api-reference"
-    }
-  ],
-  "anchors": [
-    {
-      "icon": "globe",
-      "name": "Sales Journey website",
-      "url": "https://salesjourney.io"
     }
   ],
   "navigation": [
@@ -50,6 +50,7 @@
     }
   ],
   "footerSocials": {
-    "linkedin": "https://www.linkedin.com/company/salesjourney"
+    "linkedin": "https://www.linkedin.com/company/salesjourney",
+    "website": "https://salesjourney.io"
   }
 }
