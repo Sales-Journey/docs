@@ -47,5 +47,8 @@
   "footerSocials": {
     "linkedin": "https://www.linkedin.com/company/salesjourney",
     "website": "https://salesjourney.io"
-  }
+  },
+  "integrations": {
+    "intercom": "c4qpy83s"
+}
 }
