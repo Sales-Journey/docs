@@ -50,7 +50,7 @@
         {
           "group": "Customers",
           "pages": [
-            "api-reference/core-resources/customers/get-customers"
+            "api-reference/core-resources/sales-orders/get-sale-order-by-id"
           ]
         }
       ]
