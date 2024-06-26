@@ -32,7 +32,7 @@
     {
       "group": "Get Started",
       "pages": [
-        "quickstart",
+        "quickstart", 
         "api-access"
       ]
     },
@@ -40,17 +40,17 @@
       "group": "API Documentation",
       "pages": [
         "api-reference/introduction",
-        "api-reference/authentication",
+        "api-reference/authentication"
+      ]
+    },
+    {
+      "group": "Core Resources",
+      "pages": [
+        "api-reference/core-resources/customers/customers",
         {
-          "group": "Core Resources",
+          "group": "Customers",
           "pages": [
-            "api-reference/core-resources/customers/customers",
-            {
-              "group": "Customers",
-              "pages": [
-                "api-reference/core-resources/customers/customers/get-customers"
-              ]
-            }
+            "api-reference/core-resources/customers/customers/get-customers"
           ]
         }
       ]
