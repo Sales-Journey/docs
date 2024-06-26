@@ -36,6 +36,12 @@
         "quickstart",
         "api-access"
       ]
+    },
+    {
+      "group": "API Documentation",
+      "pages": [
+        "api-reference/introduction"
+      ]
     }
   ],
   "footerSocials": {
