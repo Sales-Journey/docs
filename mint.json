@@ -21,8 +21,7 @@
       "url": "https://help.salesjourney.io"
     }
   ],
-  "anchors": [
-  ],
+  "anchors": [],
   "tabs": [
     {
       "name": "API Reference",
@@ -41,7 +40,11 @@
       "group": "API Documentation",
       "pages": [
         "api-reference/introduction",
-        "api-reference/authentication"
+        "api-reference/authentication",
+        {
+          "group": "Core Resources",
+          "pages": "api-reference/core-resources/customers"
+        }
       ]
     }
   ],
@@ -51,5 +54,5 @@
   },
   "integrations": {
     "intercom": "c4qpy83s"
-}
+  }
 }
