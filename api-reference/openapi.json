@@ -15,7 +15,29 @@
   ],
   "security": [
     {
-      "bearerAuth": []
+      "type": "awsv4",
+      "awsv4": [
+        {
+          "key": "service",
+          "value": "{{SERVICE_NAME}}",
+          "type": "string"
+        },
+        {
+          "key": "region",
+          "value": "{{REGION}}",
+          "type": "string"
+        },
+        {
+          "key": "secretKey",
+          "value": "{{SECRET_KEY}}",
+          "type": "string"
+        },
+        {
+          "key": "accessKey",
+          "value": "{{ACCESS_KEY}}",
+          "type": "string"
+        }
+      ]
     }
   ],
   "paths": {
