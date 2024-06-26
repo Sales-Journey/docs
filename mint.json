@@ -45,12 +45,15 @@
     },
     {
       "group": "Core Resources",
+      "pages": [
+        // "api-reference/core-resources/customers/customers",
         {
           "group": "Customers",
           "pages": [
             "api-reference/core-resources/customers/get-customers"
           ]
         }
+      ]
     }
   ],
   "footerSocials": {
