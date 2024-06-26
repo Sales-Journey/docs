@@ -51,7 +51,8 @@
         {
           "group": "Sales orders",
           "pages": [
-            "api-reference/core-resources/sales-orders/get-sale-order-by-id"
+            "api-reference/core-resources/sales-orders/get-sale-order-by-id",
+            "api-reference/core-resources/sales-orders/change-sale-order-status-by-id"
           ]
         }
       ]
