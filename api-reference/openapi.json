@@ -19,9 +19,9 @@
     }
   ],
   "paths": {
-    "/plants": {
+    "/customers": {
       "get": {
-        "description": "Returns all plants from the system that the user has access to",
+        "description": "Returns all customers from the system that the user has access to",
         "parameters": [
           {
             "name": "limit",
@@ -35,7 +35,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Plant response",
+            "description": "Customer response",
             "content": {
               "application/json": {
                 "schema": {
