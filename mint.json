@@ -46,7 +46,6 @@
     {
       "group": "Core Resources",
       "pages": [
-        "api-reference/core-resources/customers/customers",
         {
           "group": "Customers",
           "pages": [
