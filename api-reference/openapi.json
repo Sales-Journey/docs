@@ -19,12 +19,12 @@
       "awsv4": [
         {
           "key": "service",
-          "value": "{{SERVICE_NAME}}",
+          "value": "execute-api",
           "type": "string"
         },
         {
           "key": "region",
-          "value": "{{REGION}}",
+          "value": "us-east-1",
           "type": "string"
         },
         {
@@ -208,9 +208,9 @@
       }
     },
     "securitySchemes": {
-      "bearerAuth": {
+      "awsv4": {
         "type": "http",
-        "scheme": "bearer"
+        "scheme": "awsv4"
       }
     }
   }
