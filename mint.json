@@ -43,7 +43,15 @@
         "api-reference/authentication",
         {
           "group": "Core Resources",
-          "pages": ["api-reference/core-resources/customers"]
+          "pages": [
+            "api-reference/core-resources/customers/customers",
+            {
+              "group": "Customers",
+              "pages": [
+                "api-reference/core-resources/customers/customers/get-customers"
+              ]
+            }
+          ]
         }
       ]
     }
