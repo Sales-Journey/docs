@@ -24,7 +24,10 @@
   "anchors": [
   ],
   "tabs": [
-   
+    {
+      "name": "API Reference",
+      "url": "api-reference"
+    }
   ],
   "navigation": [
     {
@@ -33,7 +36,13 @@
         "quickstart",
         "api-access"
       ]
-    }
+    },
+    // {
+    //   "group": "API Documentation",
+    //   "pages": [
+    //     "api-reference/introduction"
+    //   ]
+    // }
   ],
   "footerSocials": {
     "linkedin": "https://www.linkedin.com/company/salesjourney",
