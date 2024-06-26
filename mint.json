@@ -40,9 +40,10 @@
       "group": "API Documentation",
       "pages": [
         "api-reference/introduction",
+        "api-reference/authentication",
         {
           "group": "Core Resources",
-          "pages": "api-reference/core-resources/customers"
+          "pages": ["api-reference/core-resources/customers"]
         }
       ]
     }
