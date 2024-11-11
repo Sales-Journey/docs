@@ -56,6 +56,8 @@ paths:
           description: Successful response
           content:
             application/json: {}
+paths:
+  /sale_order/status/{saleOrderIdentifier}:         
     post:
       tags:
         - Sales order
