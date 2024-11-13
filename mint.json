@@ -55,6 +55,12 @@
             "api-reference/core-resources/sales-orders/change-sale-order-status-by-id",
             "api-reference/core-resources/sales-orders/change-sale-order-by-id"
           ]
+        },
+        {
+          "group": "Leads",
+          "pages": [
+            "api-reference/core-resources/leads/get-lead-by-id"
+          ]
         }
       ]
     }
