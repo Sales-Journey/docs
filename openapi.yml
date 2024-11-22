@@ -38,19 +38,8 @@ paths:
               schema:
                 type: object
                 properties:
-                  orderId:
+                  sale_order_id:
                     type: string
-                  customerName:
-                    type: string
-                  totalAmount:
-                    type: number
-                    format: float
-                  status:
-                    type: string
-                    enum:
-                      - pending
-                      - completed
-                      - cancelled
         '404':
           description: Sale order not found
     patch:
@@ -104,8 +93,8 @@ paths:
                   type: string
                   enum:
                     - BILLED
-                    - PENDING
-                    - CANCELED
+                    - IN_TRANSIT
+                    - DELIVERED
               example:
                 status: BILLED
       parameters:
@@ -148,13 +137,7 @@ paths:
               schema:
                 type: object
                 properties:
-                  leadId:
-                    type: string
-                  name:
-                    type: string
-                  email:
-                    type: string
-                  phone:
+                  lead_id:
                     type: string
         '404':
           description: Lead not found
