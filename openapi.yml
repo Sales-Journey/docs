@@ -6,13 +6,16 @@ servers:
   - url: http://api.salesjourney.io
 components:
   securitySchemes:
-    awsv4Auth:
-      type: http
-      scheme: awsv4
+    awsSignature:
+      type: apiKey  # Usando o tipo `apiKey` para representar a autenticação AWS
+      in: header
+      name: Authorization  # Cabeçalho onde a chave de autenticação será enviada
 security:
-  - awsv4Auth: []
+  - awsSignature: []  # Aplica o esquema de segurança a todos os endpoints
 tags:
   - name: Sales order
+  - name: Leads
+
 paths:
   /sale_order/{saleOrderIdentifier}:
     get:
@@ -25,13 +28,20 @@ paths:
           schema:
             type: string
           required: true
-          description: Sale order identifier, it acepts documentId or saleOrderCode
+          description: Sale order identifier, it accepts documentId or saleOrderCode
           example: 666b5c37c7a0bd436f7f63d8
       responses:
         '200':
           description: Successful response
           content:
-            application/json: {}
+            application/json:
+              schema:
+                type: object
+                properties:
+                  sale_order_id:
+                    type: string
+        '404':
+          description: Sale order not found
     patch:
       tags:
         - Sales order
@@ -41,6 +51,11 @@ paths:
           application/json:
             schema:
               type: object
+              properties:
+                customFields:
+                  type: object
+                  additionalProperties:
+                    type: string
               example:
                 customFields:
                   4461f869-1b49-4d89-f3fe-f4d5e5c40607: '12852'
@@ -55,7 +70,14 @@ paths:
         '200':
           description: Successful response
           content:
-            application/json: {}
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                  message:
+                    type: string
   /sale_order/status/{saleOrderIdentifier}:         
     post:
       tags:
@@ -66,6 +88,13 @@ paths:
           application/json:
             schema:
               type: object
+              properties:
+                status:
+                  type: string
+                  enum:
+                    - BILLED
+                    - IN_TRANSIT
+                    - DELIVERED
               example:
                 status: BILLED
       parameters:
@@ -79,4 +108,36 @@ paths:
         '200':
           description: Successful response
           content:
-            application/json: {}
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                  message:
+                    type: string
+  /leads/{leadIdentifier}:         
+    get:
+      tags:
+        - Leads
+      summary: Get lead by ID
+      parameters:
+        - name: leadIdentifier
+          in: path
+          schema:
+            type: string
+          required: true
+          description: Lead identifier, it accepts documentId or leadCode
+          example: 666b5c37c7a0bd436f7f63d8
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  lead_id:
+                    type: string
+        '404':
+          description: Lead not found
